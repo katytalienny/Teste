@@ -1,0 +1,3 @@
+SELECT count(*) as alunos, nompas as pais, nomrazsoc as escola, nomhab as curso_origem, tipo_movimentacao as tipo_intercambio, ano_saida as inicio, ano_fim
+FROM ALUNO_INTERCAMBIO 
+GROUP BY nompas, nomrazsoc, nomhab, tipo_movimetacao, ano_saida, ano_fim. 
