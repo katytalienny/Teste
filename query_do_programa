@@ -2,4 +2,4 @@ SELECT inicio, nompas, nomrazsoc, nomhab, tipo_movimentacao, ano_saida, ano_fim;
 FROM ALUNO_INTERCAMBIO;
 WHERE CONVERT(dsctipsititb USING utf8mb4) != 'Desistência'
 AND tipo_movimentacao != 'Nao Informado'
-and ano_saida between (year(now()) - 5) and year(now())
+and ano_saida between (year(now()) - 5) and year(now()) and (ano_fim - ano_saida) 
